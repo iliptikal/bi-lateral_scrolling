@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Bumper />
+    <HorizontalScrollSection>
+      <div class="element"></div>
+      <div class="element"></div>
+      <div class="element"></div>
+      <div class="element"></div>
+      <div class="element"></div>
+      <div class="element"></div>
+      <div class="element"></div>
+      <div class="element"></div>
+      <div class="element"></div>
+    </HorizontalScrollSection>
+    <Bumper />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Bumper from "./components/Bumper.vue";
+import HorizontalScrollSection from './components/HorizontalScrollSection.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Bumper,
+    HorizontalScrollSection
   }
 }
 </script>
@@ -23,6 +36,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  font-size: 1.6rem;
+}
+.element {
+  background: linear-gradient( to bottom, #117634 40%, #042c02 95%);
+  height: 40rem;
+  width: 50rem;
+  margin: 0 2rem 0 0;
 }
 </style>

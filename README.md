@@ -1,4 +1,7 @@
 # bilateral-scrolling
+```
+A Vue component that will scroll a set of content horizontally when using the browser scrollbar vertically.
+```
 
 ## Project setup
 ```
